@@ -64,5 +64,20 @@ namespace TestApplication.Tests
             //Assert
 
         }
+
+        [Theory]
+        [InlineData(24, 4)]
+        [InlineData(0,-4 )]
+        [InlineDate(720,6)]
+        public void TestFactorial(int num1,  int expectedValue)
+        {
+            Calculator calc = new Calculator();
+            //Arrange
+            double actualResult = calc.TestFactorial(num1);
+            //Act
+            Assert.Equal(expectedValue, actualResult);
+            //Assert
+
+        }
     }
 }

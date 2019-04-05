@@ -4,27 +4,29 @@ using System.Text;
 
 namespace CalculatorWithTests
 {
-    class Calculator
+    public class Calculator
     {
-        public int TestAdd(num1, num2)
+        public int TestSubtract(int num1, int num2)
         {
-            return 0;
+            throw new NotImplementedException();
         }
-        public int TestSubtract(num1, num2)
+        public int TestMultiply(int num1, int num2)
         {
-            return 0;
+            throw new NotImplementedException();
         }
-        public int TestMultiply(num1, num2)
+        public int TestDivide(int num1, int num2)
         {
-            return 0;
+            throw new NotImplementedException();
         }
-        public int TestDivide(num1, num2)
+
+        public int TestAdd(int num1, int num2)
         {
-            return 0;
+            throw new NotImplementedException();
         }
-        public int TestFactorial(num1, num2)
+
+        public int TestFactorial(int num1, int num2)
         {
-            return 0;
+            throw new NotImplementedException();
         }
     }
 }

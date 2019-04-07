@@ -6,6 +6,11 @@ namespace CalculatorWithTests
 {
     public class Calculator
     {
+        public int TestAdd(int num1, int num2)
+        {
+            // throw new NotImplementedException();
+            return num1 + num2;
+        }
         public int TestSubtract(int num1, int num2)
         {
             throw new NotImplementedException();
@@ -23,7 +28,15 @@ namespace CalculatorWithTests
         public int TestFactorial(int num1)
         {
             //Factorial is for non-negative numbers only
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            int result = 1;
+            if (num1>=0)
+            {
+                for (int i = 0; i < num1; i++)
+                {
+                    result  *= (num1 - i);
+                }
+            } return result;
         }
     }
 }

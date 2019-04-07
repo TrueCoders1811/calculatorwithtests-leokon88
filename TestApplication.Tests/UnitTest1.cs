@@ -66,9 +66,10 @@ namespace TestApplication.Tests
         }
 
         [Theory]
-        [InlineData(24, 4)]
-        [InlineData(0,-4 )]
-        [InlineData(720,6)]
+        [InlineData(4,24)]
+       
+        [InlineData(6,720)]
+        [InlineData(0, 1)]
         public void TestFactorial(int num1,  int expectedValue)
         {
             Calculator calc = new Calculator();
